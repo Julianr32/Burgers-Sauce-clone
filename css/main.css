@@ -1144,6 +1144,7 @@ img {
   transition: color .3s, -webkit-transform .3s ease;
   transition: color .3s, transform .3s ease;
   transition: color .3s, transform .3s ease, -webkit-transform .3s ease;
+  margin-bottom: 4rem;
 }
 
 .right-container a:hover {
