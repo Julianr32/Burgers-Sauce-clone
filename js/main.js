@@ -74,3 +74,11 @@ hamburger.addEventListener("click", () => {
 
 
 /* =====PARALLAX ON SCROLL IMGS SECTION 1==== */
+
+
+/* ====NAVIGATION==== */
+window.addEventListener("scroll", function () {
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 50);
+    console.log(scrollY);
+})
