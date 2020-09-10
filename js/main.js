@@ -82,3 +82,22 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 50);
     console.log(scrollY);
 })
+
+/* =========IDK======= */
+const images = document.querySelectorAll(".anim");
+
+observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+            entry.target.style.animation = `anim1 1.2s forwards linear`;
+        } else {
+            entry.target.style.animation = `none`;
+        }
+    })
+})
+
+images.forEach(image => {
+    observer.observe(image)
+})
+observer.observe(images);
+/* =========IDK======= */
