@@ -125,6 +125,8 @@ i {
   text-transform: uppercase;
 }
 
+/* ====COLORS==== */
+/* ====FONT & TYPOGRAPHY==== */
 .header {
   width: 100%;
   height: auto;
@@ -160,15 +162,15 @@ i {
 }
 
 .header .nav__link {
-  color: #fff;
+  color: #Ffffff;
   -webkit-transition: color .3s;
   transition: color .3s;
   padding: .5rem 0;
 }
 
 .header .nav__link:hover {
-  color: orange;
-  border-bottom: 3px solid orange;
+  color: #dc9457;
+  border-bottom: 3px solid #dc9457;
 }
 
 .header .nav .logo {
@@ -180,9 +182,9 @@ i {
 }
 
 .header.sticky {
-  background: #161B1C;
-  -webkit-box-shadow: 0 0 10px black;
-          box-shadow: 0 0 10px black;
+  background: #1D2224;
+  -webkit-box-shadow: 0 0 10px #1D2224;
+          box-shadow: 0 0 10px #1D2224;
 }
 
 .header.sticky nav {
@@ -193,7 +195,7 @@ i {
 
 @media (max-width: 900px) {
   .header.sticky {
-    background: #DC9457;
+    background: #dc9457;
   }
   .header.sticky nav {
     padding: 3rem 2rem;
@@ -201,16 +203,16 @@ i {
             transform: scale(1);
   }
   .header {
-    background: #DC9457;
+    background: #dc9457;
     height: 100vh;
-    width: 100%;
-    position: absolute;
+    position: fixed;
+    width: 0;
     top: 0;
     left: 0;
-    -webkit-clip-path: circle(10% at 0% -10%);
-            clip-path: circle(10% at 0% -10%);
-    -webkit-transition: all .4s linear;
-    transition: all .4s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    opacity: 0;
+    pointer-events: none;
   }
   .header .nav__list {
     -webkit-box-orient: vertical;
@@ -225,11 +227,12 @@ i {
     margin-bottom: 5rem;
   }
   .header .nav__link {
-    color: #111;
+    color: #1C2123;
   }
   .header.open {
-    -webkit-clip-path: circle(180% at 90% -10%);
-            clip-path: circle(180% at 90% -10%);
+    width: 80%;
+    opacity: 1;
+    pointer-events: initial;
   }
   .hamburger {
     position: absolute;
@@ -242,7 +245,7 @@ i {
     width: 30px;
     height: 3px;
     margin-bottom: .5rem;
-    background: #fff;
+    background: #Ffffff;
   }
   #next i,
   #prev i {
@@ -676,7 +679,7 @@ i {
 .burger-showcase {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10rem 0;
+  padding-top: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
