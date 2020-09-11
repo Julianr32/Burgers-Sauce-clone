@@ -59,22 +59,13 @@ if (auto) {
     slideInterval = setInterval(nextSlide, intervalTime);
 }
 
-
-
 /* =====RESPONSIVE MENU===== */
 const hamburger = document.querySelector(".hamburger");
-const header = document.querySelector(".header");
+const header = document.querySelector(".nav");
 
 hamburger.addEventListener("click", () => {
     header.classList.toggle("open");
-
-
 })
-
-
-
-/* =====PARALLAX ON SCROLL IMGS SECTION 1==== */
-
 
 /* ====NAVIGATION==== */
 window.addEventListener("scroll", function () {
@@ -82,6 +73,9 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 50);
     console.log(scrollY);
 })
+
+
+
 
 /* =========IDK======= */
 const images = document.querySelectorAll(".anim");
