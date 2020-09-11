@@ -712,6 +712,7 @@ i {
 .main {
   min-width: 100%;
   background: url(/images/stardust.png);
+  overflow-x: hidden;
 }
 
 .burger-showcase {
