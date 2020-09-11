@@ -143,13 +143,13 @@ i {
   z-index: 1200;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  -webkit-box-shadow: 0 0 5px #1C2123;
-          box-shadow: 0 0 5px #1C2123;
 }
 
 .header.sticky {
   height: 10vh;
   background: #1C2123;
+  -webkit-box-shadow: 0 0 5px #1C2123;
+          box-shadow: 0 0 5px #1C2123;
 }
 
 .header .nav__img {
